@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    tools:ignore="MissingClass"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/radicallogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="25dp"
+    android:gravity="center"
+    tools:ignore="MissingConstraints">
+    <TextView
+        android:id="@+id/qr_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="QR Code Generated"
+        android:textColor="@color/textcolor"
+        android:textSize="21sp" />
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    tools:listitem="@layout/list_items"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_result"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textColor="@color/resultcolor"-->
+<!--        android:gravity="center"/>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/loader"-->
+<!--        android:layout_width="133dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:src="@drawable/loader"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginBottom="50dp" />-->
+    <ImageView
+        android:id="@+id/status_icon"
+        android:layout_width="133dp"
+        android:layout_height="50dp"
+        android:src="@drawable/satutsupdate"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/submitbtn"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/textcolor"
+        android:textSize="21sp" />
+    <TextView
+        android:id="@+id/statusupdate"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Status Updated"
+        android:textColor="@color/textcolor"
+        android:textSize="21sp"
+        android:visibility="gone"/>
+</LinearLayout>
+
+
+
+</LinearLayout>
